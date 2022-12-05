@@ -3,16 +3,17 @@ Renovate minimal reproduction to try to understand how to update git hashes with
 
 # Description
 
-I am trying to update Line 4 of `deps.list`. The `currentValue` is in
-the format of a git commit hash, but not part of any particular package
-management system, so I am using the `regex` manager to update versions.
-Most versions of this file are in semver and work fine, but
-https://github.com/googleapis/googleapis does not use branches, tags or
+I am trying to update Line 4 of `deps.list` to the latest commit on the
+master branch of https://github.com/googleapis/googleapis. The
+`currentValue` is in the format of a git commit hash, but not part of
+any particular package management system, so I am using the `regex`
+manager to update versions. Most versions of this file are in semver and
+work fine, but this dependency repo does not use branches, tags or
 releases when they release updates. The `HEAD` of `master` branch is
 always the latest version.
 
-Full repo: https://github.com/strophy/docker-protobuf
-Minimal reproduction repo: https://github.com/strophy/docker-protobuf-renovate-repro
+- Full repo: https://github.com/strophy/docker-protobuf
+- Minimal reproduction repo: https://github.com/strophy/docker-protobuf-renovate-repro
 
 Possible related issues:
 - https://github.com/renovatebot/renovate/issues/5640

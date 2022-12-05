@@ -1,0 +1,20 @@
+{
+  "branchPrefix": "renovate/",
+  "dryRun": null,
+  "username": "renovate-release",
+  "gitAuthor": "Renovate Bot <bot@renovateapp.com>",
+  "onboarding": false,
+  "platform": "github",
+  "includeForks": true,
+  "repositories": ["strophy/docker-protobuf"],
+  "enabledManagers": ["regex"],
+  "regexManagers": [
+    {
+      "fileMatch": ["^deps\\.list$"],
+      "matchStrings": ["GOOGLE_API_VERSION=(?<currentValue>.*?)\\n"],
+      "depNameTemplate": "googleapis/googleapis",
+      "datasourceTemplate": "git-refs",
+      "versioningTemplate": "git"
+    }
+ ]
+}

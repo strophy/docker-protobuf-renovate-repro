@@ -6,15 +6,23 @@
   "onboarding": false,
   "platform": "github",
   "includeForks": true,
-  "repositories": ["strophy/docker-protobuf"],
-  "enabledManagers": ["regex"],
+  "repositories": [
+    "strophy/docker-protobuf"
+  ],
+  "enabledManagers": [
+    "regex"
+  ],
   "regexManagers": [
     {
-      "fileMatch": ["^deps\\.list$"],
-      "matchStrings": ["GOOGLE_API_VERSION=(?<currentDigest>.*?)\\n"],
+      "fileMatch": [
+        "^deps\\.list$"
+      ],
+      "matchStrings": [
+        "GOOGLE_API_VERSION=(?<currentDigest>.*?)\\n"
+      ],
       "currentValueTemplate": "master",
       "depNameTemplate": "googleapis/googleapis",
       "datasourceTemplate": "github-tags"
     }
- ]
+  ]
 }

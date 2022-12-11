@@ -11,10 +11,10 @@
   "regexManagers": [
     {
       "fileMatch": ["^deps\\.list$"],
-      "matchStrings": ["GOOGLE_API_VERSION=(?<currentValue>.*?)\\n"],
+      "matchStrings": ["GOOGLE_API_VERSION=(?<currentDigest>.*?)\\n"],
+      "currentValueTemplate": "master",
       "depNameTemplate": "googleapis/googleapis",
-      "datasourceTemplate": "git-refs",
-      "versioningTemplate": "git"
+      "datasourceTemplate": "github-tags"
     }
  ]
 }

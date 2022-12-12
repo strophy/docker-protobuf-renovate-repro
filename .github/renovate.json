@@ -22,7 +22,7 @@
       ],
       "currentValueTemplate": "master",
       "depNameTemplate": "googleapis/googleapis",
-      "datasourceTemplate": "github-tags"
+      "datasourceTemplate": "git-refs"
     }
   ]
 }

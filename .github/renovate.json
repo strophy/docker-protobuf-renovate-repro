@@ -21,7 +21,7 @@
         "GOOGLE_API_VERSION=(?<currentDigest>.*?)\\n"
       ],
       "currentValueTemplate": "master",
-      "depNameTemplate": "googleapis/googleapis",
+      "depNameTemplate": "https://github.com/googleapis/googleapis",
       "datasourceTemplate": "git-refs"
     }
   ]

@@ -7,7 +7,7 @@
   "platform": "github",
   "includeForks": true,
   "repositories": [
-    "strophy/docker-protobuf"
+    "strophy/docker-protobuf-renovate-repro"
   ],
   "enabledManagers": [
     "regex"
